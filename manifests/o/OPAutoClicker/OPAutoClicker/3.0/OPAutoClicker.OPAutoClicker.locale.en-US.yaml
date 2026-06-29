@@ -1,8 +1,8 @@
-# Created using wingetcreate 1.1.2.0
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.2.0.schema.json
+# Created using wingetcreate 1.6.5.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.6.0.schema.json
 
 PackageIdentifier: OPAutoClicker.OPAutoClicker
-PackageVersion: 3.0
+PackageVersion: "3.0"
 PackageLocale: en-US
 Publisher: OP Auto Clicker
 PublisherUrl: https://www.opautoclicker.com/
@@ -15,5 +15,4 @@ Moniker: opautoclicker
 Tags:
 - auto-clicker
 ManifestType: defaultLocale
-ManifestVersion: 1.2.0
-
+ManifestVersion: 1.6.0

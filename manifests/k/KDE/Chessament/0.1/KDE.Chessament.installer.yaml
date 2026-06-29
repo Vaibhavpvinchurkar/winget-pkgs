@@ -1,0 +1,23 @@
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: KDE.Chessament
+PackageVersion: "0.1"
+InstallerType: nullsoft
+UpgradeBehavior: install
+ProductCode: Chessament
+Installers:
+- Architecture: x64
+  Scope: user
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/chessament/master/windows/chessament-master-701-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 547733A2D392AA6DFBC5C5E6BF2DC14AB658BC567F99A244E9D43536CB45C525
+  InstallerSwitches:
+    Custom: /CurrentUser
+- Architecture: x64
+  Scope: machine
+  InstallerUrl: https://cdn.kde.org/ci-builds/games/chessament/master/windows/chessament-master-701-windows-cl-msvc2022-x86_64.exe
+  InstallerSha256: 547733A2D392AA6DFBC5C5E6BF2DC14AB658BC567F99A244E9D43536CB45C525
+  InstallerSwitches:
+    Custom: /AllUsers
+ManifestType: installer
+ManifestVersion: 1.12.0

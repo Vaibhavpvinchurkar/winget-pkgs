@@ -1,21 +1,31 @@
-# Created with YamlCreate.ps1 v2.1.2 $debug=NVS1.7-2-5
-# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+# Created with YamlCreate.ps1 v2.4.1 Dumplings Mod $debug=QUSU.CRLF.7-4-2.Win32NT
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
 
 PackageIdentifier: Azul.Zulu.16.JRE
 PackageVersion: 16.32.15
-MinimumOSVersion: 10.0.0.0
 InstallerType: wix
 Scope: machine
-InstallModes:
-- interactive
-- silent
-- silentWithProgress
+InstallerSwitches:
+  InstallLocation: INSTALLDIR="<INSTALLPATH>"
+  Custom: ADDLOCAL=ALL
 UpgradeBehavior: install
 Commands:
+- jabswitch
+- jaccessinspector
+- jaccesswalker
+- jaotc
 - java
+- javaw
+- jfr
+- jrunscript
+- keytool
+- kinit
+- klist
+- ktab
+- rmid
+- rmiregistry
 FileExtensions:
 - class
-- jad
 - jar
 - java
 - jsp
@@ -29,4 +39,4 @@ Installers:
   InstallerSha256: 2ACFA18729F4B9EB60EC0AC3BA2CBB3F3B2BEE7E65829C3678C6F24FDCD1E188
   ProductCode: '{4663BDFB-42B1-44A2-9282-3F06C654384D}'
 ManifestType: installer
-ManifestVersion: 1.1.0
+ManifestVersion: 1.6.0
